@@ -1,0 +1,49 @@
+Specs:
+
+1. Output the word the user is trying to find.
+  WORD INPUT: beowulf
+  PHRASE INPUT: foo
+
+  This is just to check the getWord function, to prove the word input its outputting beowulf.
+
+2. Output the phrase the user wants to check the previous word for.
+
+  WORD INPUT: beowulf
+  PHRASE INPUT: fred
+
+  This is just to check the getPhrase function, to prove the word input its outputting fred.
+
+3. Test the word find count by using the same word in phrase input and word input.
+
+  WORD INPUT: beowulf
+  PHRASE INPUT: beowulf
+
+  This is just to check the CountRepeats function is returning 1 for the exact word inputs.
+
+4. Test the word counts 0 with a completely different input phrase.
+
+  WORD INPUT: beowulf
+  PHRASE INPUT: china
+
+  This is just to check the CountRepeats function is returning 0 for different word inputs.
+
+5. Test the word count with many phrase words inputted.
+
+  WORD INPUT: beowulf
+  PHRASE INPUT: beowulf and fred
+
+  This is just to check the CountRepeats function is returning 1 for beowulf appearing in the phrase input.
+
+6. Test that even unfamiliar characters will not give back a faulty search.
+
+  WORD INPUT: beowulf
+  PHRASE INPUT: fred and his friend beowulf.
+
+  This is just to check the CountRepeats function is returning 0 for different word inputs.
+
+7. Test that even unfamiliar characters will not give back a faulty search.
+
+  WORD INPUT: beowulf
+  PHRASE INPUT: fred and his friend beowulf.
+
+  This is just to check the CountRepeats function is returning 0 for different word inputs.

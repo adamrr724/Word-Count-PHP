@@ -1,5 +1,5 @@
 <?php
-	 class WordCount
+	 class RepeatCounter
 		{
 				private $word;
 				private $str_of_words;
@@ -20,12 +20,17 @@
 						return $this->str_of_words;
 				}
 
-				function countWord()
+				function CountRepeats()
 				{
+						$compare_word_array = explode(" ", $this->str_of_words);
+
 						$count = 0;
-						if ($this->word = $this->str_of_words)
-						{
-								$count += 1;
+
+						foreach ($compare_word_array as $compare_word) {
+								if ($compare_word == $this->word)
+								{
+										$count += 1;
+								}
 						} return $count;
 				}
 
