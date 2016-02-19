@@ -46,6 +46,20 @@
 		//Assert
 		$this->assertEquals('1', $result);
 		}
+
+		function test_count_many_Words()
+		{
+		//Arrange
+		$word_input = 'beowulf';
+		$phrase_input = 'beowulf and fred';
+		$test_WordCount = new WordCount($word_input, $phrase_input);
+
+		//Act
+		$result = $test_WordCount->countWord();
+
+		//Assert
+		$this->assertEquals('1', $result);
+		}
 	}
 
 ?>
