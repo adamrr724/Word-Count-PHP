@@ -15,14 +15,17 @@ body {
  padding-left: 1em;
 }
 
-h1, h3 {
-  color: #4C4CFF;
-}
-
 .result {
   color: #4CA64C;
 }
 
 .form-body-text {
   margin-left: 1em;
+}
+
+img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15em;
 }
