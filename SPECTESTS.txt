@@ -39,11 +39,11 @@ Specs:
   WORD INPUT: beowulf
   PHRASE INPUT: fred and his friend beowulf.
 
-  This is just to check the CountRepeats function is returning 0 for different word inputs.
+  This is just to check the CountRepeats function is returning 1 even with punctuation included.
 
-7. Test that even unfamiliar characters will not give back a faulty search.
+7. Test that even different cases will not give back a faulty search.
 
   WORD INPUT: beowulf
-  PHRASE INPUT: fred and his friend beowulf.
+  PHRASE INPUT: Fred and his friend BeOwUlF.
 
-  This is just to check the CountRepeats function is returning 0 for different word inputs.
+  This is just to check the CountRepeats function is returning 1 for case insensitive search.

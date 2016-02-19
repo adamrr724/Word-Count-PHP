@@ -24,12 +24,15 @@
 				{
 						$phrase_stripped = str_replace(array("?","!",",",";",".","/","&"), "", $this->str_of_words);
 
-						$compare_word_array = explode(" ", $phrase_stripped);
+						$word = strtolower($this->word);
+						$phrase = strtolower($phrase_stripped);
+
+						$compare_word_array = explode(" ", $phrase);
 
 						$count = 0;
 
 						foreach ($compare_word_array as $compare_word) {
-								if ($compare_word == $this->word)
+								if ($compare_word == $word)
 								{
 										$count += 1;
 								}

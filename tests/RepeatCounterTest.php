@@ -88,6 +88,20 @@
 		//Assert
 		$this->assertEquals('1', $result);
 		}
+
+		function test_count_with_cases()
+		{
+		//Arrange
+		$word_input = 'beowulf';
+		$phrase_input = 'Fred and his friend BeOwUlF.';
+		$test_RepeatCounter = new RepeatCounter($word_input, $phrase_input);
+
+		//Act
+		$result = $test_RepeatCounter->CountRepeats();
+
+		//Assert
+		$this->assertEquals('1', $result);
+		}
 	}
 
 ?>
