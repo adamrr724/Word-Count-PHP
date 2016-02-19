@@ -12,7 +12,8 @@
 	});
 
 	$app->get('/results', function() use ($app) {
-		return $app['twig']->render('results.html.twig');
+		$Counter = new RepeatCounter($_GET['word'], $_GET['phrase']);
+		return $app['twig']->render('results.html.twig', array('class' => $Counter));
 	});
 
 	return $app;
