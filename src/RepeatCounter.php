@@ -22,7 +22,9 @@
 
 				function CountRepeats()
 				{
-						$compare_word_array = explode(" ", $this->str_of_words);
+						$phrase_stripped = str_replace(array("?","!",",",";",".","/","&"), "", $this->str_of_words);
+
+						$compare_word_array = explode(" ", $phrase_stripped);
 
 						$count = 0;
 
