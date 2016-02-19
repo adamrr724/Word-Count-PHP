@@ -1,11 +1,17 @@
 <?php
 	 class WordCount
 		{
-		private $word;
+				private $word;
 
-		 function getWord(){
-			return $this->word;
-			}
+				function __construct($word)
+				{
+						$this->word = $word;
+				}
+
+				function getWord()
+				{
+						return $this->word;
+				}
 
 	}
  ?>

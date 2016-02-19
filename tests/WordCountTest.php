@@ -9,7 +9,7 @@
 		{
 		//Arrange
 		$input = 'beowulf';
-		$test_WordCount = new WordCount();
+		$test_WordCount = new WordCount($input);
 
 		//Act
 		$result = $test_WordCount->getWord();
