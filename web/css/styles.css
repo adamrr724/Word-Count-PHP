@@ -1,0 +1,23 @@
+button a {
+  color: black;
+}
+
+.inputs {
+  color: #cc0000;
+}
+
+body {
+  text-align: center;
+}
+
+.row {
+text-align: left;
+}
+
+h1, h3 {
+  color: #4C4CFF;
+}
+
+.result {
+  color: #4CA64C;
+}
