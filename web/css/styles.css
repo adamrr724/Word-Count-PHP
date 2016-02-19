@@ -11,7 +11,8 @@ body {
 }
 
 .row {
-text-align: left;
+ text-align: left;
+ padding-left: 1em;
 }
 
 h1, h3 {
@@ -20,4 +21,8 @@ h1, h3 {
 
 .result {
   color: #4CA64C;
+}
+
+.form-body-text {
+  margin-left: 1em;
 }
