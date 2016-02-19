@@ -2,15 +2,19 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/styles.css" media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
         <title>Results</title>
     </head>
     <body>
-        <h3>The word you inputted is found in the phrase {{ class.CountRepeats }} times.</h3>
-        <h4>Your inputs were:</h4>
+        <h3>The word you inputted is found in the phrase <span class="result">{{ class.CountRepeats }}</span> times.</h3> <br>
+        <h4>Your inputs were:</h4> <br>
         <p>
-          Word to check: {{ class.getWord }} <br>
-          Phrase to search: {{ class.getPhrase }}
+          Word to check: <p class="inputs">{{ class.getWord }}</p>
+          Phrase to search: <p class="inputs">{{ class.getPhrase }}
         </p>
-
-        <a href="/">Try again!</a>
+        <br>
+        <button class ="btn waves-effect waves-light" type="button" name="action"><a href="/">Try Again</a></button>
     </body>

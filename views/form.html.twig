@@ -2,17 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/styles.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
     <title>Word Repeat Counter</title>
   </head>
   <body>
     <h1>Word Repeat Counter</h1>
-    <h3>Find out how many times a word appears in a phrase!</h3>
-    <form action="/results">
-        <label for="word">Enter a word</label>
-        <input id="word" name="word">
-        <label for="phrase">Enter a Phrase</label>
-        <input id="phrase" name="phrase">
-    <button type="submit">Submit</button>
-    </form>
+    <div class="row">
+      <h4>Find out how many times a word appears in a phrase!</h4>
+      <form class="col s12" action="/results">
+        <div class="row">
+          <div class="input-field col s4 text-inputs">
+            <input id="word" type="text" class="validate" name="word">
+            <label for="word">Enter a Word</label>
+          </div>
+          <div class="input-field col s4 text-inputs">
+            <input id="phrase" type="text" class="validate" name="phrase">
+            <label for="phrase">Enter a Phrase</label>
+          </div>
+        </div>
+        <br>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        </button>
+      </form>
+    </div>
   </body>
 </html>
