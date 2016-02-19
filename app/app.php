@@ -8,10 +8,12 @@
 	$app->register(new Silex\Provider\TwigServiceProvider(), array('twig.path' => __DIR__.'/../views'));
 
 	$app->get('/', function() use ($app) {
-		$my_scrabble = new Scrabble(NULL);
-		return $app['twig']->render('form.html.twig', array('score' => $my_scrabble));
+		return $app['twig']->render('form.html.twig');
 	});
 
+	$app->get('/results', function() use ($app) {
+		return $app['twig']->render('results.html.twig');
+	});
 
 	return $app;
 
